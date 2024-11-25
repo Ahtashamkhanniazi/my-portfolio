@@ -1,35 +1,33 @@
 import { InlineCode } from "@/once-ui/components";
 
 const person = {
-    firstName: 'Selene',
-    lastName:  'Yu',
+    firstName: 'Muhammad Ahtasham',
+    lastName:  'Aslam',
     get name() {
         return `${this.firstName} ${this.lastName}`;
     },
-    role:      'Design Engineer',
+    role:      'MERN Stack Developer',
     avatar:    '/images/avatar.jpg',
-    location:  'Asia/Jakarta',        // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-    languages: ['English', 'Bahasa']  // optional: Leave the array empty if you don't want to display languages
+    location:  'Asia/Pakistan/Lahore',
+    languages: ['English', 'Urdu']
 }
 
 const newsletter = {
     display: true,
     title: <>Subscribe to {person.firstName}'s Newsletter</>,
-    description: <>I occasionally write about design, technology, and share thoughts on the intersection of creativity and engineering.</>
+    description: <>I occasionally write about design, technology, and share insights on the intersection of creativity and engineering.</>
 }
 
 const social = [
-    // Links are automatically displayed.
-    // Import new icons in /once-ui/icons.ts
     {
         name: 'GitHub',
         icon: 'github',
-        link: 'https://github.com/once-ui-system/nextjs-starter',
+        link: 'https://github.com/Ahtashamkhanniazi',
     },
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/company/once-ui/',
+        link: 'https://www.linkedin.com/in/ahtasham-khan-niazi/',
     },
     {
         name: 'X',
@@ -39,7 +37,7 @@ const social = [
     {
         name: 'Email',
         icon: 'email',
-        link: 'mailto:example@gmail.com',
+        link: 'mailto:niaziahtasham98@gmail.com',
     },
 ]
 
@@ -47,14 +45,14 @@ const home = {
     label: 'Home',
     title: `${person.name}'s Portfolio`,
     description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>Design engineer and builder</>,
-    subline: <>I'm Selene, a design engineer at <InlineCode>FLY</InlineCode>, where I craft intuitive<br/> user experiences. After hours, I build my own projects.</>
+    headline: <>MERN Stack Developer and blockchain integration specialist</>,
+    subline: <>I'm {person.name}, a MERN Stack Developer, skilled in secure and responsive web application development at <InlineCode>Beard Brother Technologies</InlineCode>. After hours, I build and innovate on my personal projects.</>
 }
 
 const about = {
     label: 'About',
     title: 'About me',
-    description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+    description: `Meet ${person.name}, a skilled ${person.role} from ${person.location}`,
     tableOfContent: {
         display: true,
         subItems: true
@@ -69,52 +67,43 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Selene is a Jakarta-based design engineer with a passion for transforming complex challenges into simple, elegant design solutions. Her work spans digital interfaces, interactive experiences, and the convergence of design and technology.</>
+        description: <>Muhammad Ahtasham Aslam is a Lahore-based MERN Stack Developer with a passion for creating secure, responsive web applications. Skilled in frameworks like Next.js, Electron.js, and blockchain integration, Ahtasham specializes in turning complex requirements into efficient solutions.</>
     },
     work: {
-        display: true, // set to false to hide this section
+        display: true,
         title: 'Work Experience',
         experiences: [
             {
-                company: 'FLY',
-                timeframe: '2022 - Present',
-                role: 'Senior Design Engineer',
+                company: 'Beard Brother Technologies',
+                timeframe: '03/2023 – 09/2024',
+                role: 'MERN Stack Developer',
                 achievements: [
-                    <>Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user engagement and 30% faster load times.</>,
-                    <>Spearheaded the integration of AI tools into design workflows, enabling designers to iterate 50% faster.</>
+                    <>Developed responsive web applications using MERN stack, Next.js, Material-UI, and Emotion, enhancing performance and user experience.</>,
+                    <>Created a desktop VPN application with Electron.js, expanding secure browsing solutions.</>,
+                    <>Implemented secure authentication with JWT for data privacy.</>
                 ],
-                images: [ // optional: leave the array empty if you don't want to display images
-                    {
-                        src: '/images/projects/project-01/cover-01.jpg',
-                        alt: 'Once UI Project',
-                        width: 16,
-                        height: 9
-                    }
-                ]
+                images: []
             },
             {
-                company: 'Creativ3',
-                timeframe: '2018 - 2022',
-                role: 'Lead Designer',
+                company: 'CodeNinja Inc',
+                timeframe: '07/2021 – 02/2023',
+                role: 'Associate Front-End Developer',
                 achievements: [
-                    <>Developed a design system that unified the brand across multiple platforms, improving design consistency by 40%.</>,
-                    <>Led a cross-functional team to launch a new product line, contributing to a 15% increase in overall company revenue.</>
+                    <>Collaborated to develop responsive, user-friendly interfaces using React, Next.js, HTML, CSS, and JavaScript.</>,
+                    <>Ensured cross-browser compatibility and optimized performance.</>,
+                    <>Contributed to debugging and refining UI components for project specifications.</>
                 ],
-                images: [ ]
+                images: []
             }
         ]
     },
     studies: {
-        display: true, // set to false to hide this section
+        display: true,
         title: 'Studies',
         institutions: [
             {
-                name: 'University of Jakarta',
-                description: <>Studied software engineering.</>,
-            },
-            {
-                name: 'Build the Future',
-                description: <>Studied online marketing and personal branding.</>,
+                name: 'Lahore Leads University',
+                description: <>Bachelor of Studies in Software Engineering</>,
             }
         ]
     },
@@ -123,38 +112,40 @@ const about = {
         title: 'Technical skills',
         skills: [
             {
-                title: 'Figma',
-                description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-02.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                    {
-                        src: '/images/projects/project-01/cover-03.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                title: 'Languages',
+                description: <>JavaScript, HTML, CSS</>,
+                images: []
             },
             {
-                title: 'Next.js',
-                description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
-                images: [
-                    {
-                        src: '/images/projects/project-01/cover-04.jpg',
-                        alt: 'Project image',
-                        width: 16,
-                        height: 9
-                    },
-                ]
+                title: 'Frameworks & Libraries',
+                description: <>MongoDB, Express.js, React.js, Node.js, Next.js, Electron.js, Redux, Material-UI, Emotion</>,
+                images: []
+            },
+            {
+                title: 'Blockchain Integration',
+                description: <>Skilled in Ethers.js, Web3.js, Web3modal, and Wagmi for creating secure blockchain-based solutions.</>,
+                images: []
+            },
+            {
+                title: 'Tools',
+                description: <>GitHub, Jira, Figma, Adobe XD, VS Code, Postman, FileZilla</>,
+                images: []
+            },
+            {
+                title: 'Languages Spoken',
+                description: <>English (Proficient), Urdu (Fluent)</>,
+                images: []
+            },
+            {
+                title: 'Other Technical Skills',
+                description: <>Experience in building secure authentication with JWT, form validations, responsive design, and RESTful API development.</>,
+                images: []
             }
         ]
     }
+    
 }
+
 
 const blog = {
     label: 'Blog',
