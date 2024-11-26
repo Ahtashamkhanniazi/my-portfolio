@@ -47,7 +47,7 @@ export default function Home(
 ) {
 	unstable_setRequestLocale(locale);
 	const t = useTranslations();
-	const { home, about, person, newsletter } = renderContent(t);
+	const { home, about, person,work, newsletter } = renderContent(t);
 	return (
 		<Flex
 			maxWidth="m" fillWidth gap="xl"
@@ -129,7 +129,30 @@ export default function Home(
 			<RevealFx translateY="16" delay={0.6}>
 				<Projects range={[1,1]} locale={locale}/>
 			</RevealFx>
-			{routes['/blog'] && (
+			<RevealFx translateY="12" delay={0.4}>
+				<Flex fillWidth>
+					<Button
+						id="work"
+						data-border="rounded"
+						href={`/${locale}/work`}
+						variant="tertiary"
+						size="m">
+						<Flex
+							gap="8"
+							alignItems="center">
+							{about.avatar.display && (
+								<Avatar
+									style={{marginLeft: '-0.75rem', marginRight: '0.25rem'}}
+									src={person.avatar}
+									size="m"/>
+								)}
+								{t("work.title")}
+								<Arrow trigger="#work"/>
+						</Flex>
+					</Button>
+				</Flex>
+			</RevealFx>
+			{/* {routes['/blog'] && (
 				<Flex
 					fillWidth gap="24"
 					mobileDirection="column">
@@ -146,8 +169,8 @@ export default function Home(
 						<Posts range={[1,2]} columns="2" locale={locale}/>
 					</Flex>
 				</Flex>
-			)}
-			<Projects range={[2]} locale={locale}/>
+			)} */}
+			{/* <Projects range={[2]} locale={locale}/> */}
 			{/* { newsletter.display &&
 				<Mailchimp newsletter={newsletter} />
 			} */}

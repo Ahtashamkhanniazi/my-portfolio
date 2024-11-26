@@ -40,19 +40,18 @@ const social = [
         link: 'mailto:niaziahtasham98@gmail.com',
     },
 ]
-
 const home = {
     label: 'Home',
-    title: `${person.name}'s Portfolio`,
-    description: `Portfolio website showcasing my work as a ${person.role}`,
-    headline: <>MERN Stack Developer and blockchain integration specialist</>,
-    subline: <>I'm {person.name}, a MERN Stack Developer, skilled in secure and responsive web application development at <InlineCode>Beard Brother Technologies</InlineCode>. After hours, I build and innovate on my personal projects.</>
+    title: "Muhammad Ahtasham Aslam's Portfolio",
+    description: "Portfolio website showcasing my work as a MERN Stack Developer and Blockchain Enthusiast. I specialize in building secure, efficient, and scalable web applications using the latest technologies.",
+    headline: <>MERN Stack Developer and Blockchain Integration Specialist</>,
+    subline: <>I'm Muhammad Ahtasham Aslam, a passionate MERN Stack Developer. With years of experience in building secure and responsive web applications, I specialize in integrating blockchain solutions and developing decentralized applications. My expertise spans across both front-end and back-end development, creating end-to-end solutions with a strong focus on performance, security, and scalability. When I'm not working on client projects, I’m constantly exploring new technologies and building personal projects to stay ahead of the curve.</>
 }
 
 const about = {
     label: 'About',
     title: 'About me',
-    description: `Meet ${person.name}, a skilled ${person.role} from ${person.location}`,
+    description: `Hi, I'm Muhammad Ahtasham Aslam, a dedicated MERN Stack Developer with a deep interest in blockchain technology. I focus on developing high-performance, secure web applications using modern technologies and frameworks. My goal is to provide seamless, scalable, and reliable solutions to real-world problems, particularly in the areas of web development and decentralized applications.`,
     tableOfContent: {
         display: true,
         subItems: true
@@ -67,7 +66,7 @@ const about = {
     intro: {
         display: true,
         title: 'Introduction',
-        description: <>Muhammad Ahtasham Aslam is a Lahore-based MERN Stack Developer with a passion for creating secure, responsive web applications. Skilled in frameworks like Next.js, Electron.js, and blockchain integration, Ahtasham specializes in turning complex requirements into efficient solutions.</>
+        description: <>I'm a MERN Stack Developer with a passion for creating highly scalable and secure web applications. With expertise in frameworks like React.js, Next.js, Node.js, and Express.js, I am able to deliver solutions that are both efficient and user-friendly. In addition to my full-stack development skills, I am well-versed in blockchain integration using technologies like Web3.js, Ethers.js, and Wagmi, enabling me to build decentralized applications (dApps) that are secure, transparent, and highly functional.</>
     },
     work: {
         display: true,
@@ -78,9 +77,10 @@ const about = {
                 timeframe: '03/2023 – 09/2024',
                 role: 'MERN Stack Developer',
                 achievements: [
-                    <>Developed responsive web applications using MERN stack, Next.js, Material-UI, and Emotion, enhancing performance and user experience.</>,
-                    <>Created a desktop VPN application with Electron.js, expanding secure browsing solutions.</>,
-                    <>Implemented secure authentication with JWT for data privacy.</>
+                    <>Developed and optimized high-performance web applications using the MERN stack, ensuring responsive design and smooth user experience.</>,
+                    <>Led the development of a desktop VPN application using Electron.js, providing users with enhanced security and privacy in their online activities.</>,
+                    <>Implemented secure user authentication with JWT, ensuring data privacy and safe access control for users in various applications.</>,
+                    <>Collaborated with cross-functional teams to identify requirements, design solutions, and maintain application performance and security.</>
                 ],
                 images: []
             },
@@ -89,9 +89,9 @@ const about = {
                 timeframe: '07/2021 – 02/2023',
                 role: 'Associate Front-End Developer',
                 achievements: [
-                    <>Collaborated to develop responsive, user-friendly interfaces using React, Next.js, HTML, CSS, and JavaScript.</>,
-                    <>Ensured cross-browser compatibility and optimized performance.</>,
-                    <>Contributed to debugging and refining UI components for project specifications.</>
+                    <>Worked extensively with React and Next.js to build user-centric interfaces, ensuring a seamless and engaging user experience across devices.</>,
+                    <>Optimized web application performance by implementing best practices in HTML, CSS, and JavaScript, improving load times and overall efficiency.</>,
+                    <>Developed and tested features with a strong emphasis on cross-browser compatibility, ensuring accessibility for users on different platforms.</>
                 ],
                 images: []
             }
@@ -103,48 +103,48 @@ const about = {
         institutions: [
             {
                 name: 'Lahore Leads University',
-                description: <>Bachelor of Studies in Software Engineering</>,
+                description: <>Bachelor of Studies in Software Engineering, with a focus on web development, database management, and software architecture.</>,
             }
         ]
     },
     technical: {
-        display: true, // set to false to hide this section
-        title: 'Technical skills',
+        display: true,
+        title: 'Technical Skills',
         skills: [
             {
                 title: 'Languages',
-                description: <>JavaScript, HTML, CSS</>,
+                description: <>JavaScript, TypeScript, HTML, CSS — These are the core languages I work with to create dynamic and responsive web applications.</>,
                 images: []
             },
             {
                 title: 'Frameworks & Libraries',
-                description: <>MongoDB, Express.js, React.js, Node.js, Next.js, Electron.js, Redux, Material-UI, Emotion</>,
+                description: <>MongoDB, Express.js, React.js, Node.js, Next.js, Electron.js, Redux, Material-UI, Emotion, Ant Design, JSON Web Tokens — I use these powerful frameworks and libraries to build scalable, efficient, and highly interactive web applications.</>,
                 images: []
             },
             {
                 title: 'Blockchain Integration',
-                description: <>Skilled in Ethers.js, Web3.js, Web3modal, and Wagmi for creating secure blockchain-based solutions.</>,
+                description: <>I specialize in integrating blockchain technologies into web applications. I have experience working with Ethers.js, Web3.js, Web3modal, and Wagmi to develop secure decentralized applications (dApps) that allow users to interact with blockchain networks and smart contracts.</>,
                 images: []
             },
             {
                 title: 'Tools',
-                description: <>GitHub, Jira, Figma, Adobe XD, VS Code, Postman, FileZilla</>,
+                description: <>GitHub, Jira, Figma, Adobe XD, VS Code, Postman, FileZilla — These tools are essential for managing development workflows, collaborating with teams, and ensuring smooth version control and deployment processes.</>,
                 images: []
             },
             {
                 title: 'Languages Spoken',
-                description: <>English (Proficient), Urdu (Fluent)</>,
+                description: <>English (Proficient), Urdu (Fluent) — I can effectively communicate in both languages, enabling me to work with diverse teams and clients.</>,
                 images: []
             },
             {
                 title: 'Other Technical Skills',
-                description: <>Experience in building secure authentication with JWT, form validations, responsive design, and RESTful API development.</>,
+                description: <>Experience in building secure authentication with JWT, implementing form validations, developing responsive designs, and working with RESTful APIs. I’m always focused on improving the security and scalability of applications.</>,
                 images: []
             }
         ]
     }
-    
 }
+
 
 
 const blog = {

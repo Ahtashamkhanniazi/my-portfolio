@@ -15,6 +15,8 @@ import { getMessages, getTranslations, unstable_setRequestLocale } from 'next-in
 import { routing } from "@/i18n/routing";
 import { renderContent } from "@/app/resources";
 import { Background, Flex } from "@/once-ui/components";
+import { cookies } from "next/headers";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export async function generateMetadata(
 	{ params: { locale }}: { params: { locale: string }}
@@ -89,6 +91,9 @@ export default async function RootLayout({
 } : RootLayoutProps) {
 	unstable_setRequestLocale(locale);
 	const messages = await getMessages();
+
+	// Get theme from cookies, default to 'light' if no theme is set
+	const theme = (cookies().get('theme')?.value as 'dark' | 'light') || 'light';
 	return (
 		<NextIntlClientProvider messages={messages}>
 			<Flex
@@ -96,7 +101,7 @@ export default async function RootLayout({
 				background="page"
 				data-neutral={style.neutral} data-brand={style.brand} data-accent={style.accent}
 				data-solid={style.solid} data-solid-style={style.solidStyle}
-				data-theme={style.theme}
+				data-theme={theme}
 				data-border={style.border}
 				data-surface={style.surface}
 				data-transition={style.transition}
@@ -118,6 +123,7 @@ export default async function RootLayout({
 						fillWidth
 						minHeight="16">
 					</Flex>
+					<ThemeToggle initialTheme={theme} />
 					<Header/>
 					<Flex
 						zIndex={0}
