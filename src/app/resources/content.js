@@ -73,25 +73,41 @@ const about = {
         title: 'Work Experience',
         experiences: [
             {
-                company: 'Beard Brother Technologies',
-                timeframe: '03/2023 – 09/2024',
+                company: 'Code Graphers',
+                timeframe: '09/2024 – Present',
+                location: 'Lahore, Pakistan',
                 role: 'MERN Stack Developer',
                 achievements: [
-                    <>Developed and optimized high-performance web applications using the MERN stack, ensuring responsive design and smooth user experience.</>,
-                    <>Led the development of a desktop VPN application using Electron.js, providing users with enhanced security and privacy in their online activities.</>,
-                    <>Implemented secure user authentication with JWT, ensuring data privacy and safe access control for users in various applications.</>,
-                    <>Collaborated with cross-functional teams to identify requirements, design solutions, and maintain application performance and security.</>
+                    <>Developed and optimized scalable, responsive, and high-performance web applications using the MERN stack, with a focus on React.js, Node.js, and MongoDB.</>,
+                    <>Collaborated with cross-functional teams to deliver user-friendly solutions that met business requirements and exceeded performance expectations.</>,
+                    <>Integrated advanced features into applications, such as payment gateways, authentication systems, and real-time notifications, improving user experience.</>,
+                    <>Improved database performance by optimizing MongoDB queries and utilizing best practices in data modeling.</>
                 ],
                 images: []
             },
             {
-                company: 'CodeNinja Inc',
-                timeframe: '07/2021 – 02/2023',
-                role: 'Associate Front-End Developer',
+                company: 'Beard Brother Technologies',
+                timeframe: '03/2023 – 09/2024',
+                location: 'Islamabad, Pakistan',
+                role: 'MERN Stack Developer',
                 achievements: [
-                    <>Worked extensively with React and Next.js to build user-centric interfaces, ensuring a seamless and engaging user experience across devices.</>,
-                    <>Optimized web application performance by implementing best practices in HTML, CSS, and JavaScript, improving load times and overall efficiency.</>,
-                    <>Developed and tested features with a strong emphasis on cross-browser compatibility, ensuring accessibility for users on different platforms.</>
+                    <>Developed and optimized high-performance web applications using the MERN stack, ensuring responsive design and smooth user experience.</>,
+                    <>Led the development of a desktop VPN application using Electron.js, enhancing user security and privacy online.</>,
+                    <>Implemented secure user authentication with JWT, ensuring data privacy and secure access to user accounts.</>,
+                    <>Designed and implemented database models using MongoDB, including data manipulation, querying, and optimization for performance.</>,
+                    <>Developed and integrated RESTful APIs and implemented CRUD operations, ensuring smooth data flow and security throughout the application.</>
+                ],
+                images: []
+            },
+            {
+                company: 'Codeninja',
+                timeframe: '10/2022 – 02/2023',
+                location: 'Lahore, Pakistan',
+                role: 'MERN Stack Trainee',
+                achievements: [
+                    <>Trained on the MERN stack, gaining proficiency in MongoDB, Express.js, React.js, Node.js, and PostgreSQL.</>,
+                    <>Learned industry-standard tools such as Jira for project management and Agile methodologies for efficient teamwork and task estimation.</>,
+                    <>Developed foundational skills in conflict management and cross-team collaboration within a dynamic, fast-paced environment.</>
                 ],
                 images: []
             }
@@ -103,7 +119,8 @@ const about = {
         institutions: [
             {
                 name: 'Lahore Leads University',
-                description: <>Bachelor of Studies in Software Engineering, with a focus on web development, database management, and software architecture.</>,
+                timeframe: '10/2018 – 06/2022',
+                description: <>Bachelor of Studies in Software Engineering.</>,
             }
         ]
     },
