@@ -18,11 +18,18 @@ const NeonLightCursor = () => {
     createTrail(e.clientX, e.clientY);
   };
 
+  const handleTouchMove = (e: TouchEvent) => {
+    const touch = e.touches[0]; // Get the first touch point
+    createTrail(touch.clientX, touch.clientY);
+  };
+
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("touchmove", handleTouchMove);
 
     return () => {
       window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("touchmove", handleTouchMove);
     };
   }, []);
 
@@ -53,13 +60,7 @@ const NeonLightCursor = () => {
           width: 20px;
           height: 20px;
           border-radius: 50%;
-          background: linear-gradient(
-            180deg,
-            // #8af7e4,
-            #fdcbfc,
-            // #c6bdea,
-            #48adf1
-          );
+          background: linear-gradient(180deg, #fdcbfc, #48adf1);
           z-index: -1;
           box-shadow: 0 0 5px #fdcbfc, 0 0 10px #fdcbfc, 0 0 20px #9c089a,
             0 0 30px #0e9297;
@@ -76,15 +77,6 @@ const NeonLightCursor = () => {
             transform: scale(3);
           }
         }
-
-        // @keyframes hue-rotate {
-        //   0% {
-        //     filter: hue-rotate(0deg);
-        //   }
-        //   100% {
-        //     filter: hue-rotate(360deg);
-        //   }
-        // }
       `}</style>
     </div>
   );
